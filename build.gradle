@@ -1,0 +1,9 @@
+allprojects { Project project ->
+    if (project.name.contains("app")){
+        project.task("lol", {doFirst {println "lol from all"}})
+    }
+    println project.name
+}
+
+
+
